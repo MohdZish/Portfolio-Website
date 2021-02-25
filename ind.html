@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="index.css">
+<script src="postpage.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        [data-toggle="collapse"][aria-expanded="false"] > .js-rotate-if-collapsed
+        {
+            -webkit-transform:rotate(180deg);
+  			-webkit-transition-duration: 1s;
+        }
+    </style>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+
+  <link href='https://fonts.googleapis.com/css?family=Merriweather'>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+
+
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+    AOS.init({
+  duration: 1500,  //FUNCTION FOR  ANIMATION FADE IN WHILE SCROLLING !!!
+})
+
+</script>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+  <button class="navbar-toggler navbar-dark  " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon "></span>
+  </button>
+
+  <img class="navbar-brand" src="Images/Logo/logo.png" href="#"></img>
+
+  <button type="button" class="btn navbuttons underline d-none d-md-block">Home</button>
+
+  <div class="nav-item dropdown">
+    <button class="btn navbuttons d-none d-md-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Fixes <i class="fas fa-angle-down"></i>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
+
+
+
+  <button type="button" class="btn navbuttons underline d-none d-md-block">Ask Question</button>
+
+  <form class="form-inline searcharea d-flex justify-content-center ">
+      <!--<i class="fas fa-search" style="color: white;"></i>-->
+      <input class="form-control d-none d-md-block searchbar" type="search" placeholder="Search for a fix!" aria-label="Search">
+  </form>
+
+  <div class="collapse navbar-collapse text-center  identificationtab" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+    
+      <li class="nav-item pr-2">
+        <button class="btn btn-outline-light signin d-none d-md-block" href="#"><i class="fas fa-plus"></i> Upload Post</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light signin"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+    <div class="container-fluid h-100">
+      <div class="row h-100" >
+        <div class="col-lg-5 my-auto" data-aos="fade-right">
+            <h1 class="maintext mt-5 ml-1">A Hub To Fix your Daily Tech Bugs.</h1>
+            <p class="mb-3 ml-1 mt-3 ">Publish your own articles by fixing your everyday Tech Issues!</p>
+
+            <a href="#" class="btn btn-info getstarted ml-1 mt-3 " >Start Writing</a>
+            <a href="#" class="btn btn-outline-info getstarted ml-1 mt-3">Ask a Question</a>
+        </div>
+
+        <div class="col-lg-7">
+                <div class="screen" data-aos="fade-up">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                   <script 
+                src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+                <lottie-player  src="https://assets10.lottiefiles.com/packages/lf20_lkkf4xxv.json" background="transparent" class="mainpageanim no-gutters" speed="1" style="transform : scale(1.35);" loop autoplay></lottie-player>
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid middlelane middlelanetemp ">
+       
+    </div>
+
+    <div class="container-fluid maincontent mb-5" >
+
+      <div data-aos="fade-up" data-aos-once="true"> 
+         <h1 class="contenttext mt-5 ml-1">Popular Articles <i class="fas fa-fire"></i></h1>
+      <div class="container-fluid mt-5">
+        <div class="card-deck">
+          <a class="text-decoration-none" href="postpage.html"><div class="card containercards stretched-link  p-0">
+                <img class="card-img-top cardimg" src="Images/MainPage/temp.png" alt="Card image cap">
+                <div class="card-body sidebarcard ">
+                    <h6 class="sidebarcontent">
+                      How to fix Windows not genuine error without cmd
+                    </h6>
+
+                    <a class="carduserlink">
+                      by</a> <a class="" href="http://www.google.com">Username</a> <br>
+                    
+
+                    <span class="badge  tag">Windows</span>
+                </div>
+          </div></a>
+
+          <a class="text-decoration-none" href="postpage.html"><div class="card containercards stretched-link  p-0">
+                <img class="card-img-top cardimg" src="Images/MainPage/temp2.jpg" alt="Card image cap">
+                <div class="card-body sidebarcard ">
+                    <h6 class="sidebarcontent">
+                      How to fix Windows not genuine error without cmd
+                    </h6>
+
+                    <a class="carduserlink">
+                      by</a> <a class="" href="http://www.google.com">Username</a> <br>
+                    
+
+                    <span class="badge  tag">Windows</span>
+                </div>
+          </div></a>
+
+          <a class="text-decoration-none" href="postpage.html"><div class="card containercards stretched-link p-0">
+                <img class="card-img-top cardimg" src="Images/MainPage/temp3.png" alt="Card image cap">
+                <div class="card-body sidebarcard ">
+                    <h6 class="sidebarcontent">
+                      How to fix Windows not genuine error without cmd
+                    </h6>
+
+                    <a class="carduserlink">
+                      by</a> <a class="" href="http://www.google.com">Username</a> <br>
+                    
+
+                    <span class="badge  tag">Windows</span>
+                </div>
+          </div></a>
+
+          <div class="card">
+              <div class="card-body sidebarcard">
+                <h6 class="sidebar-heading d-flex text-muted sidebarcontent">
+                    <span>More Popular Articles... </span>
+                  </h6>
+
+                  <ul class="nav innerside">
+                    <li class="nav-item">
+                      <a class="nav-link textstyle1 buttonstyle1 " href="postpage.html">
+                        How to fix Windows not genuine error <i class="fab fa-windows"></i>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link textstyle1 buttonstyle1" href="#">
+                        How to fix Windows not genuine error <i class="fab fa-windows"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link textstyle1 buttonstyle1" href="#">
+                        How to fix Windows not genuine error <i class="fab fa-windows"></i>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link textstyle1 buttonstyle1" href="#">
+                        How to fix Windows not genuine error <i class="fab fa-windows"></i>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+
+     
+      <div data-aos="fade-up" data-aos-once="true">
+
+        <h1 class="contenttext mt-5  ml-1">Recent Articles <i class="fas fa-history"></i></h1>
+
+      <div class="container-fluid mt-5">
+        <div class="card-deck">
+          <a class="text-decoration-none" href="postpage.html"><div class="card containercards stretched-link  p-0">
+                <img class="card-img-top cardimg" src="Images/MainPage/temp.png" alt="Card image cap">
+                <div class="card-body sidebarcard ">
+                    <h6 class="sidebarcontent">
+                      How to fix Windows not genuine error without cmd
+                    </h6>
+
+                    <a class="carduserlink">
+                      by</a> <a class="" href="http://www.google.com">Username</a> <br>
+                    
+
+                    <span class="badge  tag">Windows</span>
+                </div>
+          </div></a>
+
+          <a class="text-decoration-none" href="postpage.html"><div class="card containercards stretched-link  p-0">
+                <img class="card-img-top cardimg" src="Images/MainPage/temp2.jpg" alt="Card image cap">
+                <div class="card-body sidebarcard ">
+                    <h6 class="sidebarcontent">
+                      How to fix Windows not genuine error without cmd
+                    </h6>
+
+                    <a class="carduserlink">
+                      by</a> <a class="" href="http://www.google.com">Username</a> <br>
+                    
+
+                    <span class="badge  tag">Windows</span>
+                </div>
+          </div></a>
+
+          <a class="text-decoration-none" href="postpage.html"><div class="card containercards stretched-link p-0">
+                <img class="card-img-top cardimg" src="Images/MainPage/temp3.png" alt="Card image cap">
+                <div class="card-body sidebarcard ">
+                    <h6 class="sidebarcontent">
+                      How to fix Windows not genuine error without cmd
+                    </h6>
+
+                    <a class="carduserlink">
+                      by</a> <a class="" href="http://www.google.com">Username</a> <br>
+                    
+
+                    <span class="badge  tag">Windows</span>
+                </div>
+          </div></a>
+
+          <div class="card">
+              <div class="card-body sidebarcard">
+                <h6 class="sidebar-heading d-flex text-muted sidebarcontent">
+                    <span>More Recent Articles... </span>
+                  </h6>
+
+                  <ul class="nav innerside">
+                    <li class="nav-item">
+                      <a class="nav-link textstyle1 buttonstyle1 " href="postpage.html">
+                        How to fix Windows not genuine error <i class="fab fa-windows"></i>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link textstyle1 buttonstyle1" href="#">
+                        How to fix Windows not genuine error <i class="fab fa-windows"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link textstyle1 buttonstyle1" href="#">
+                        How to fix Windows not genuine error <i class="fab fa-windows"></i>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link textstyle1 buttonstyle1" href="#">
+                        How to fix Windows not genuine error <i class="fab fa-windows"></i>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+        </div>
+       </div>
+
+      </div>
+
+    <div class="container-fluid middlelane mt-5">
+       <?php
+                include_once("db_connect.php");
+                $sql = "SELECT PName, PDesc, MainImage, Theme, Language, Type FROM projectdata";
+
+                function colorgiver($name) {
+                              $color = "white";
+                              if(strpos($name, "Web Dev")!== false) $color="SpringGreen";
+                              if(strpos($name, "Soft Dev")!== false) $color="SpringGreen";
+                              if(strpos($name, "Data Science")!== false) $color="SpringGreen";
+                              if(strpos($name, "Game Dev")!== false) $color="SpringGreen";
+                              if(strpos($name, "Design")!== false) $color="SpringGreen";
+                              if(strpos($name, "HTML")!== false) $color="SpringGreen";
+                              if(strpos($name, "CSS")!== false) $color="SpringGreen";
+                              if(strpos($name, "JS")!== false) $color="SpringGreen";
+                              if(strpos($name, "Bootstrap")!== false) $color="SpringGreen";
+                              if(strpos($name, "Python")!== false) $color="SpringGreen";
+                              if(strpos($name, "C")!== false) $color="SpringGreen";
+                              if(strpos($name, "C++")!== false) $color="SpringGreen";
+                              if(strpos($name, "C#")!== false) $color="SpringGreen";
+                              if(strpos($name, "SQL")!== false) $color="SpringGreen";
+                              if(strpos($name, "WPF")!== false) $color="SpringGreen";
+                              return $color;
+                            }
+
+                $resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
+                while( $record = mysqli_fetch_assoc($resultset) ) {
+                ?>
+                
+
+                  <div class="col-lg-4 col-md-5 col-12">
+                    <div class="card cardt mt-4">
+                      <img class="card-img-top" type="submit" form="sendtopage" name="submit" src="<?php echo $record['MainImage']; ?>">
+                      <input type="hidden" name="ProjectName" value="<?php echo $record['PName']; ?>" style="max-width: 50px;">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          <?php echo $record['PName']; ?>                        
+                        </h4>
+                        <p class="card-text">
+                          <?php echo $record['PDesc']; ?>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          
+                          <div class="row justify-content-end">
+                            <?php 
+                              $theme = $record['Theme']; #all themes given in a project
+                      
+                              $allthemes = explode(",", $theme);
+
+                              foreach($allthemes as $currenttheme){
+                                $curtheme = $currenttheme;
+                                echo "<k class='solid themeelement' class='colortags' style='font-family: Roboto!important;  background-color: ".colorgiver($currenttheme)."; color: black;'>{$curtheme}</k>";
+                              }
+                              ?>
+                          </div>
+                          <div class="btn-group">
+                            <form action="ViewProject.php" id="sendtopage" enctype='multipart/form-data' method="POST" id="my-form" style="margin-bottom: 0px;">
+                              <input type="submit" name="submit" value="View" class="btn btn-primary"></input>
+                              <input type="hidden" name="ProjectName" value="<?php echo $record['PName']; ?>" style="max-width: 50px;">
+                            </form>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+ 
+                  
+                <?php } ?> 
+    </div>
+
+    <div class="container-fluid maincontent mb-5">
+
+
+      </div>
+
+    <div class="container-fluid middlelane mt-5">
+       
+    </div>
+
+
+
+
+
+
+</body>
+</html>
