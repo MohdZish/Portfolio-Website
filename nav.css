@@ -1,0 +1,83 @@
+.navbar {
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(230,230,230,0.39);
+  -moz-box-shadow: 0px 8px 0px 0px rgba(230,230,230,0.39);
+  box-shadow: 0px 8px 0px 0px rgba(230,230,230,0.39);
+
+  background: #4b2af5;
+  min-height: 50px;
+}
+
+.secondarycolor {
+  background-color: #4b2af5;
+  color: white !important;
+}
+
+.navbuttons{
+  background-color: transparent !important;
+  color: white !important;
+}
+
+
+.navbar-brand {
+  color: #f0f0f0;
+  cursor: pointer;
+  width: 135px;
+  height: auto;
+}
+
+
+
+.searcharea{
+  padding-left: 50px !important;
+}
+
+.searchbar{
+  width: 600px !important;
+}
+
+.signin{
+  background-color: #0090ff;
+  border-radius: 12px!important;
+}
+
+.navleftbtn{
+  min-width: 100px !important;
+}
+
+
+@media (max-width: 1000px) {
+    .searchbar{
+      width: 240px !important;
+    }
+
+    .searcharea{
+      padding-left: 0px !important;
+    }
+
+    .methodtitle{
+      display: none;
+    }
+
+    .steptext{
+      max-width: 630px;
+      word-wrap: break-word;
+      padding-left: 20px;
+    }
+
+    .circlecont {
+      padding-right: : 10px !important;
+    } 
+    .methodbox{
+      padding-left: 0px;
+    }
+
+    .stepcircle {
+    margin-right: 30px !important;
+    } 
+
+    .navbar-brand {
+    padding-left: 0px;
+}
+
+
+ }
